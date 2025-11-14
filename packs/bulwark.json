@@ -21,7 +21,7 @@
   },
   "filter": {
     "player": {
-      "combat": null,
+      "combat": true,
       "specs": [],
       "weapons": [],
       "traits": [],
@@ -183,7 +183,6 @@
             10243,
             31337,
             5667,
-            787,
             743,
             9123,
             29303,
@@ -213,7 +212,16 @@
             77011,
             78624,
             29906,
-            43949
+            43949,
+            883,
+            45910,
+            43401,
+            787,
+            63284,
+            62663,
+            21816,
+            27737,
+            21660
           ]
         },
         "threshold": {
@@ -2098,7 +2106,15 @@
               "type": "Buff",
               "combatant": "Player",
               "ids": [
-                787
+                883,
+                45910,
+                43401,
+                787,
+                63284,
+                62663,
+                21816,
+                27737,
+                21660
               ]
             },
             "threshold": {
@@ -2160,6 +2176,195 @@
               "members": [
                 {
                   "enabled": true,
+                  "name": "signet-of-stone",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        883
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "defy-pain",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        45910
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "unflinching-fortitude",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        43401
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
                   "name": "endure-pain",
                   "anchor": "Parent",
                   "pos": [
@@ -2173,6 +2378,321 @@
                       "combatant": "Player",
                       "ids": [
                         787
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "perilous-gift",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        63284
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "reversal-of-fortune",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        62663
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "defiant-stance",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        21816
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "infuse-light",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        27737
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "aed",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        21660
                       ]
                     },
                     "threshold": {
