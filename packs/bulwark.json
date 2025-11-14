@@ -168,6 +168,71 @@
     },
     {
       "enabled": true,
+      "name": "special:we-will-never-yield-back",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "type": "Buff",
+          "combatant": "Player",
+          "ids": [
+            77242
+          ]
+        },
+        "threshold": {
+          "threshold_type": "Present",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Icon",
+      "icon": {
+        "File": "bulwark\\we-will-never-yield.png"
+      },
+      "tint": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "zoom": 1.0,
+      "round": 0.0,
+      "border_size": 0.0,
+      "border_color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "conditions": [],
+      "duration_bar": false,
+      "duration_text": false,
+      "stacks_text": false,
+      "size": [
+        200.0,
+        228.0
+      ]
+    },
+    {
+      "enabled": true,
       "name": "all",
       "anchor": "Parent",
       "pos": [
@@ -4202,6 +4267,106 @@
                 228.0
               ]
             },
+            {
+              "enabled": true,
+              "name": "icon",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                15.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": {
+                  "type": "Inherit"
+                },
+                "threshold": {
+                  "threshold_type": "Present",
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": "Automatic",
+              "tint": [
+                1.0,
+                0.99999,
+                0.99999,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": true,
+              "size": [
+                32.0,
+                32.0
+              ]
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "special:we-will-never-yield",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Buff",
+              "combatant": "Player",
+              "ids": [
+                77242
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
             {
               "enabled": true,
               "name": "icon",
