@@ -21,7 +21,7 @@
   },
   "filter": {
     "player": {
-      "combat": true,
+      "combat": null,
       "specs": [],
       "weapons": [],
       "traits": [],
@@ -103,7 +103,7 @@
     },
     {
       "enabled": true,
-      "name": "special:distortion-back",
+      "name": "special:distortion-back-active",
       "anchor": "Parent",
       "pos": [
         0.0,
@@ -168,7 +168,7 @@
     },
     {
       "enabled": true,
-      "name": "special:we-will-never-yield-back",
+      "name": "special:we-will-never-yield-back-active",
       "anchor": "Parent",
       "pos": [
         0.0,
@@ -247,7 +247,6 @@
           "ids": [
             10243,
             31337,
-						77242,
             743,
             9123,
             29303,
@@ -304,7 +303,8 @@
             10335,
             40408,
             13134,
-            34283
+            34283,
+            77242
           ]
         },
         "threshold": {
@@ -490,6 +490,67 @@
           "type": "Icon",
           "icon": {
             "File": "bulwark\\shield-bright.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            200.0,
+            228.0
+          ]
+        },
+        {
+          "enabled": false,
+          "name": "category-active",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Inherit"
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\arc-blue.png"
           },
           "tint": [
             1.0,
@@ -3003,7 +3064,7 @@
               "anchor": "Parent",
               "pos": [
                 0.0,
-                0.0
+                15.0
               ],
               "opacity": 1.0,
               "trigger": {
