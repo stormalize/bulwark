@@ -6,8 +6,8 @@
     "Screen": "Center"
   },
   "pos": [
-    -300.0,
-    0.0
+    -250.0,
+    100.0
   ],
   "opacity": 1.0,
   "trigger": {
@@ -4724,6 +4724,433 @@
           "pos": [
             0.0,
             -10.5
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Inherit"
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 25.0,
+          "lower_bound": 0.0,
+          "upper_bound": 1.0,
+          "fill": [
+            0.99999,
+            1.0,
+            0.99999,
+            1.0
+          ],
+          "background": [
+            0.0,
+            0.0,
+            0.0,
+            0.497006
+          ],
+          "border_size": 1.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tick_size": 1.0,
+          "tick_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "size": [
+            28.0,
+            5.0
+          ],
+          "align": "Center",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": []
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "resistance",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        -74.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "type": "Buff",
+          "combatant": "Player",
+          "ids": [
+            26980,
+            69995
+          ]
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "bg",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 0.5,
+          "trigger": {
+            "source": {
+              "type": "Always"
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\resistance-bg-dark-purple.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            100.0,
+            68.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "placeholder",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 0.5,
+          "trigger": {
+            "source": {
+              "type": "Always"
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\resistance-placeholder-outline.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            100.0,
+            68.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "active-glow",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Inherit"
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": {
+            "kind": "Pulse",
+            "period": 1000
+          },
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\resistance-glow-energy.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            100.0,
+            68.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "active-stars",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 0.75,
+          "trigger": {
+            "source": {
+              "type": "Inherit"
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": {
+            "kind": "Pulse",
+            "period": 1750
+          },
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\resistance-stars-a.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            100.0,
+            68.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "active",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Inherit"
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "bulwark\\resistance.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            100.0,
+            68.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "duration",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            20.5
           ],
           "opacity": 1.0,
           "trigger": {
